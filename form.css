@@ -2,21 +2,41 @@
     margin: 0;
     padding: 0;
 }
+.page-container{
+  position: relative;
+  min-height: 100vh;
+}
+.content-wrap{
+  padding-bottom: 6.5rem;
+}
+body{
+  background-color: #bbb;
+}
 .main{
-  background-attachment:fixed ;
     width: 100%;
     background-color: #bbb;
     background-position: center;
     background-size: cover;
     height: fit-content;
+    margin-top: 29px;
+    margin-bottom: 21px;
 }
 
 .navbar{
-	border-width:1px;
-	border-style: solid;
-    width: 100%;
-    height: 75px;
-    margin: 0;
+	width: 98vw;
+  height: 75px;
+  margin: 0;
+  display: flex;
+  z-index: 20;
+  position: sticky;
+}
+.menu{
+  border: 1px solid;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-content: space-around;
+  background-color: white;
 }
 .icon{
     width: 270.6px;
@@ -75,14 +95,16 @@ a{
     width: 180px; ;
 }    
 footer{
+  position: absolute;
+    bottom: 0;
   background: #110c0b;
-  height: auto;
-  width: auto;
+  height: 3.5rem;
+  width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 40px;
   color: white;
 }
 .footer-content{
+  background-color: #110c0b;
   text-align: center;
 }
 .footer-content h3{
@@ -97,12 +119,13 @@ footer{
   font-size: 14px;
 }
 .socials{
+  
   background-color: #110c0b;
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem 0 3rem 0;
+  padding: 7px 0 3rem 0;
 }
 .socials li{
   color: black;
@@ -118,6 +141,7 @@ footer{
  color:aqua
 }
 .footer-bottom{
+  background-color: #110c0b;
   width: auto;
   text-align: center;
 }
@@ -133,4 +157,30 @@ footer{
 }
 #form{
   height: fit-content;
+}
+@media screen and (max-width: 778px) {
+  .navbar{
+    flex-direction: column;
+  }
+    .menu{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  .navbar-ul{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+    .icon{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo{
+      text-align: center;
+    }
+    .main{
+      margin-top: 75px;
+    }
 }
