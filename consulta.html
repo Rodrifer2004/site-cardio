@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="consulta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Consulta</title>
+</head>
+<body>
+    <div class="page-container">
+        <div class="content-wrap">
+    <div class="navbar">
+        
+        <div class="menu"> 
+            <div class="icon">
+                <h2 class="logo">Cardiologia</h2>
+            </div>
+            <ul class="navbar-ul">
+            <li><a href="site.html">Home</a>  </li>
+            <li><a class="active" id="agend" href="#">Agendamentos</a>  </li>
+            <li><a href="#">Serviços</a>  </li>
+        </ul>
+        </div>
+    </div>
+    <div class="main">
+        
+    <form action="">
+        <div class="Id_pessoal">
+            
+            <p>Identificação pessoal</p>
+            <p>Nome: <input type="text"></p>
+            <p>Sexo: <input type="radio" name="sexo" value="Masculino" required>Masculino     <input type="radio" name="sexo" value="Feminino">Feminino</p> 
+            <p>Data de Nascimento: <input type="date" name="dt" id="dt" required></p>
+            <p>Naturalidade: <input type="text" required></p>
+            <p>Estado: <input type="text" name="Estado" required></p>
+            <p>Cidade: <input type="text" name="Cidade" required></p>
+            <p>Telefone: <input type="tel" name="tel_pessoal" id="tel_pessoal" placeholder="(99)99999-9999" 
+                pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$" required> <br><small>Formato: (99)99999-9999</small></p>
+            <br>
+        </div>
+        <div class="Id_familiar">
+            <p>Identificação Familiar</p>
+            <p>Nome do pai: <input type="text"></p>
+            <p>Nome da mãe: <input type="text"></p>
+            <p>Número de emergência: <input type="tel" name="tel_emerg" id="tel_emerg" placeholder="(99)99999-9999" 
+                pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$" required></p>
+            <p>Tipo sanguíneo: <select name="tipo_sangue" id="tipo_sangue">
+                                    <option value="A">A</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B">B</option>
+                                    <option value="B-">B-</option>
+                                    <option value="AB">AB</option>
+                                    <option value="AB-">AB-</option>
+                                    <option value="O">O</option>
+                                    <option value="O-">O-</option>
+                                </select></p>
+                                <input type="submit" value="continuar">
+                            
+        </div>
+    </form>
+    </div>
+</div>
+    <footer>
+       <div class="footer-content">
+        <h3>Sobre o Site</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+            occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+       </div>
+ <div class="footer-bottom">
+    <p>&copy;2023 Cardio. designed by <span>Rodrifer2004</span> Todos os direitos reservados</p>
+ </div>
+    </footer>
+</div>
+</body>
+</html>
