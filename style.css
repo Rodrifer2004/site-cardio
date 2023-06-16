@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+  background-color: #191313;
+}
 .coluna p{
 font-family: Verdana;
 font-size: 25px;
@@ -45,18 +48,31 @@ font-size: 25px;
 }
 
 .main{
-  background-attachment:fixed ;
+  background-attachment:fixed;
     width: 100%;
     background-color: #bbb;
     background-image: url(images/logo.gif);
     background-position: center;
     background-size: cover;
     height: 109vh;
+    margin-top: 29px;
+    margin-bottom: 21px;
 }
 .navbar{
-    width: 100%;
-    height: 75px;
-    margin: 0;
+  width: 98vw;
+  height: 75px;
+  margin: 0;
+  display: flex;
+  z-index: 20;
+  position: sticky;
+}
+.menu{
+  border: 1px solid;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-content: space-around;
+  background-color: white;
 }
 .icon{
     width: 270.6px;
@@ -89,16 +105,6 @@ li{
     display: inline;
     float: left;
 }
-#agend{
-width: 180px; ;
-}
-a{
- font-size: 30px;
-   width: 105px; 
-   height: 47px ;
-    display: block;
-    padding: 0;
-}
 li a {
     display: block;
     color: black;
@@ -112,6 +118,16 @@ li a {
   .active {
     background-color: #C51919;
   }
+#agend{
+width: 180px; ;
+}
+a{
+ font-size: 30px;
+   width: 105px; 
+   height: 47px ;
+    display: block;
+    padding: 0;
+}
   .botn_dir{
     position: relative; top: 100px;left: -100px;
     align-items: center;
@@ -157,11 +173,9 @@ li a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 #a{
-  float: left;
+  display: contents;
 }
-#a2{
-  float: right;
-}
+
 #algo{
   position: relative; left: 80px;
 
@@ -222,4 +236,30 @@ footer{
   text-transform: uppercase;
   opacity: .4;
   font-weight: 200;
+}
+@media screen and (max-width: 778px) {
+  .navbar{
+    flex-direction: column;
+  }
+    .menu{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  .navbar-ul{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+    .icon{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo{
+      text-align: center;
+    }
+    .main{
+      margin-top: 75px;
+    }
 }
