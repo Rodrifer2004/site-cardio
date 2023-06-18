@@ -33,22 +33,12 @@ body{
   align-content: space-around;
   background-color: white;
 }
-.icon{
-    width: 270.6px;
-    float: left;
-}
 .logo{
-  border-top: 10px white;
-  border-top-style: solid;
-  height:65px;
-    display: block;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color: red;
-    font-size: 41px;
-    font-family: 'Courier New', Courier, monospace;
-    float: left;
+  color: red;
+  font-size: 41px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  padding-top: 4%;
 }
 ul{
     list-style-type: none;
@@ -60,10 +50,10 @@ ul{
 }
 li{
         border-right: 1px solid #bbb;
-        display: inline;
         float: left;
 }
 li a {
+       width: fit-content;
        display: block;
        color: black;
        text-align: center;
@@ -86,10 +76,7 @@ a{
    #esquec{
 font-size: medium;
 display: contents;
-}
- #agend{
-    width: 180px; ;
-}    
+}  
 footer{
   background: #110c0b;
   height: auto;
