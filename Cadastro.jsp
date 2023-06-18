@@ -1,12 +1,16 @@
-<!DOCTYPE html>
+
+	<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+	
+	<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Paciente.css">
+    <link rel="stylesheet" href="Cadastro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Cadastro - Portal do paciente</title>
+    <title>Cadastro - Portal do Paciente</title>
     <script>
         function ValidaSenha(){
             const senha = document.querySelector('input[name=senha]');
@@ -33,76 +37,50 @@
 
             <ul class="navbar-ul">
             <li><a href="site.html">Home</a>  </li>
-            <li><a href="#">Agendamentos</a>  </li>
+            <li><a  id="agend" href="#">Agendamentos</a>  </li>
             <li><a href="#">Serviços</a>  </li>
-            <li><a href="login.html">Login</a>  </li>
+            <li><a  href="login.html">Login</a>  </li>
             <li><a class="active" href="cadastro.html">Cadastro</a>  </li>
             </ul>
         </div>
     </div>
     <div class="main">
                 
-        <div class="cadastro">
-            <form action="RespostaPaciente.jsp" method="post">
-                <div class="c_text">
+        <div class="login">
+            <form action="RespostaCadastro.jsp" method="post">
+                <div class="l_text">
                     <h1>Fazer Cadastro</h1><br>
                 </div>
-
-                <div class="c_border">
+                <div class="l_email">
                     <label for="email" class="login_text"><b>E-mail:</b></label>
-                    <input type="text" class="cadastro_input" name="email" required><br>
+                <input type="text" class="login_email" name="email" required><br>
                 </div>
-
-                <div class="c_border">
+                <div class="l_senha">
                     <label for="senha" class="login_text"><b>Senha:</b> </label>
-                    <input type="password" onkeyup="ValidaSenha()" id="senha1" class="cadastro_input" name="senha" required><br>
+                <input type="password" onkeyup="ValidaSenha()" id="senha1" class="login_senha" name="senha" required><br>
                 </div>
-
-                <div class="c_border">
+                <div class="l_senha">
                     <label for="repetir senha" class="login_text"><b>Repetir Senha:</b> </label>
-                    <input type="password" onkeyup="ValidaSenha()" id="senha2" class="cadastro_input" name="confirma" required><br>
+                <input type="password" onkeyup="ValidaSenha()" id="senha2" class="login_senha" name="confirma" required><br>
                 </div>
                 <p id="resultado"></p><br>
-
-                <div class="c_border">
-                    <label for="nome" class="login_text"><b>Nome:</b></label> 
-                    <input name="nome" class="cadastro_input" type="text" required><br>
-                </div>
-
-                <div class="c_non_text">
-                    <div class="child_non_text">
-                    <label for="sexo" class="login_text"><b>Sexo: </b></label>
-                    <input type="radio" name="sexo" value="Masculino" required>Masculino     <input type="radio" name="sexo" value="Feminino">Feminino 
-                    </div>
-
-                    <div class="child_non_text">
-                    <label for="dt_nascimento"  class="login_text"><b>Data: </b> </label>
+                <div class="Id_pessoal">
+            
+                    <p>Identificação pessoal</p>
+                    <label for="nome">Nome:</label> 
+                     <input name="nome" type="text"><br>
+                     <label for="sexo">Sexo:</label>
+                     <input type="radio" name="sexo" value="Masculino" required>Masculino     <input type="radio" name="sexo" value="Feminino">Feminino <br>
+                    <label for="dt_nascimento">Data: </label>
                     <input type="date" name="dt_nascimento" id="dt" required> <br>
-                    </div>
+                    <label for="nacionalidade">Nacionalidade:</label> <input type="text" name="nacionalidade" required> <br>
+                   <label for="cidade">Cidade:</label>  <input type="text" name="cidade" required> <br>
+                    <label for="estado">Estado:</label> <input type="text" name="estado" required> <br>
+                    <label for="telefone">Telefone:</label>  <input type="tel" name="telefone" id="telefone" placeholder="(99)99999-9999" 
+                        pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$" required> <br>
+                    <br>
                 </div>
-
-                <div class="c_border">
-                    <label for="nacionalidade" class="login_text"><b>Nacionalidade: </b></label> 
-                    <input type="text" class="cadastro_input" name="nacionalidade" required> <br>
-                </div>
-
-                <div class="c_border">
-                    <label for="cidade" class="login_text"><b>Cidade: </b></label>  
-                    <input type="text" class="cadastro_input" name="cidade" required> <br>
-                </div>
-
-                <div class="c_border">
-                    <label for="estado" class="login_text"><b>Estado: </b></label> 
-                    <input type="text" class="cadastro_input" name="estado" required> <br>
-                </div>
-
-                <div class="c_border">
-                    <label for="telefone" class="login_text"><b>Telefone:</b> </label>  
-                    <input type="tel" class="c_tel" name="telefone" id="telefone" placeholder="(99)99999-9999" 
-                    pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$" required>
-                </div>
-
-                    <br><br><br><br>
+                <br> <br>
                 <input type="submit" id="entrar" value="Cadastrar">
             </form>
         </div>
