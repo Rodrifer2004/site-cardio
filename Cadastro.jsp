@@ -39,7 +39,7 @@
             <li><a href="site.html">Home</a>  </li>
             <li><a href="#">Agendamentos</a>  </li>
             <li><a href="#">Serviços</a>  </li>
-            <li><a href="Login.jsp">Login</a>  </li>
+            <li><a href="../Login/Login.jsp">Login</a>  </li>
             <li><a class="active" href="cadastro.html">Cadastro</a>  </li>
             </ul>
         </div>
@@ -47,7 +47,7 @@
     <div class="main">
                 
         <div class="cadastro">
-            <form action="RespostaPaciente.jsp" method="post">
+            <form action="RespostaCadastro.jsp" method="post">
                 <div class="c_text">
                     <h1>Fazer Cadastro</h1><br>
                 </div>
