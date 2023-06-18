@@ -35,11 +35,15 @@
                 <h2 class="logo">Cardiologia</h2>
             </div>
 
+            <nav>
             <ul class="navbar-ul">
             <li><a href="site.html">Home</a>  </li>
             <li><a href="#">Agendamentos</a>  </li>
             <li><a href="#">Serviços</a>  </li>
-            <li><a href="../Login/Login.jsp">Login</a>  </li>
+            </ul>
+            </nav>
+            <ul class="right">
+            <li><a href="login.html">Login</a>  </li>
             <li><a class="active" href="cadastro.html">Cadastro</a>  </li>
             </ul>
         </div>
