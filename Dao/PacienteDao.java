@@ -90,7 +90,8 @@ package Dao;
  						+ "'nacionalidade' = " + p.getNacionalidade() + ","
  						+ "'cidade' = " + p.getCidade() + ","
  						+ "'estado' = " + p.getEstado() + ","
- 						+ "'telefone' = " + p.getTelefone() + ";");
+ 						+ "'telefone' = " + p.getTelefone() + 
+       "WHERE idpaciente = " + p.getIdpaciente() + ";");
  						
  				conn.fecharConexao();
  				
